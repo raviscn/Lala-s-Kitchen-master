@@ -1,0 +1,39 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lalaskitchenmaster-dev-161202-authRole",
+      "UnauthRoleArn": "arn:aws:iam::514315976148:role/amplify-lalaskitchenmaster-dev-161202-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::514315976148:role/amplify-lalaskitchenmaster-dev-161202-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-lalaskitchenmaster-dev-161202-deployment",
+      "UnauthRoleName": "amplify-lalaskitchenmaster-dev-161202-unauthRole",
+      "StackName": "amplify-lalaskitchenmaster-dev-161202",
+      "StackId": "arn:aws:cloudformation:ap-south-1:514315976148:stack/amplify-lalaskitchenmaster-dev-161202/a8c1b170-5908-11ed-b833-06942b5dd14c",
+      "AmplifyAppId": "d3ajij8x1wihqf",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-lalaskitchenmaster-dev-161202-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "lalas": {}
+      },
+      "function": {
+        "lalasCreateAuthChallenge": {
+          "deploymentBucketName": "amplify-lalaskitchenmaster-dev-161202-deployment",
+          "s3Key": "amplify-builds/lalasCreateAuthChallenge-4d69533146444e787963-build.zip"
+        },
+        "lalasDefineAuthChallenge": {
+          "deploymentBucketName": "amplify-lalaskitchenmaster-dev-161202-deployment",
+          "s3Key": "amplify-builds/lalasDefineAuthChallenge-374831746d762f664943-build.zip"
+        },
+        "lalasPreSignup": {
+          "deploymentBucketName": "amplify-lalaskitchenmaster-dev-161202-deployment",
+          "s3Key": "amplify-builds/lalasPreSignup-7a36385378477a4e3268-build.zip"
+        },
+        "lalasVerifyAuthChallengeResponse": {
+          "deploymentBucketName": "amplify-lalaskitchenmaster-dev-161202-deployment",
+          "s3Key": "amplify-builds/lalasVerifyAuthChallengeResponse-2b773137622f34483550-build.zip"
+        }
+      }
+    }
+  }
+}
