@@ -10,8 +10,8 @@ type Menu @model @auth(rules: [{ allow: public }])
   Description: String
   IsVeg: Boolean! #veg/nonveg
   Ingredient:String 
-  DishType:String #gravy/semi gravy
-  MealCategory: [MealCategoryEnum] 
+  DishType:String 
+  MealCategory: String 
   MealSlot:MealSlotEnum
   AvailableDay:String 
   Price:Float
@@ -21,7 +21,29 @@ type Menu @model @auth(rules: [{ allow: public }])
   TotalAvailableCount: Int
   Status:StatusEnum! 
 }
-
+enum MealCategoryEnum{
+  Regular,
+  Healthy,
+  Diabetic
+}
+enum MealSlotEnum{
+  Breakfast,
+  Lunch,
+  Dinner
+}
+enum StatusEnum
+{
+  Active,
+  Inactive,
+  Deleted,
+  Archived,
+  Paused,
+  Cancelled,
+  Packed,
+  Dispatched,
+  Delivered
+  
+}
  
  type MasterSubscription @model @auth(rules: [{ allow: public }])
 {
@@ -88,29 +110,6 @@ type Plan @model @auth(rules: [{ allow: public }])
   TotalPricePerMonth: Float!
 }
 
-enum MealCategoryEnum{
-  Regular,
-  Healthy,
-  Diabetic
-}
-enum MealSlotEnum{
-  Breakfast,
-  Lunch,
-  Dinner
-}
-enum StatusEnum
-{
-  Active,
-  Inactive,
-  Deleted,
-  Archived,
-  Paused,
-  Cancelled,
-  Packed,
-  Dispatched,
-  Delivered
-  
-}
 enum VegNonVegEnum
 {
   Vegeterian,
